@@ -35,7 +35,7 @@ npm run build
 
 This site is automatically deployed via Netlify when changes are pushed to the main branch.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-netlify-badge-id/deploy-status)](https://app.netlify.com/sites/mega-mall/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d105f910-2783-4395-83a0-77a607708293/deploy-status)](https://app.netlify.com/sites/mega-mall-simulator/deploys)
 
 ## License
 
