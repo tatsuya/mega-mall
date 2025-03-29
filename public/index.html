@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega Mall - Interactive Simulator</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1>MEGA MALL SIMULATOR</h1>
+      <button id="shopping-cart-btn" class="shopping-cart-btn">🛒<span id="cart-count" class="shopping-cart-count">0</span></button>
+    </header>
+    
+    <div class="container">
+      <div class="stats-panel">
+        <div class="stat money">💰 Money: $<span id="money-amount">1000</span></div>
+        <div class="stat energy">⚡ Energy: <span id="energy-level">100</span>/100</div>
+        <div class="stat happiness">😊 Happiness: <span id="happiness-level">50</span>/100</div>
+      </div>
+      
+      <div class="simulation-controls">
+        <button id="start-sim" class="control-btn">Start Simulation</button>
+        <button id="reset-sim" class="control-btn">Reset</button>
+      </div>
+      
+      <div class="mall-map">
+        <h2 style="text-align: center; margin: 20px 0;">Interactive Mall Simulator</h2>
+        
+        <div class="floor-tabs">
+          <!-- Floor tabs will be populated by JavaScript -->
+        </div>
+        
+        <div class="map-container">
+          <!-- Store elements will be populated by JavaScript -->
+          <div id="avatar" class="avatar">👤</div>
+        </div>
+        
+        <div class="map-legend">
+          <!-- Legend items will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- Store Modal -->
+    <div id="store-modal" class="store-modal">
+      <div class="modal-content">
+        <span class="modal-close">&times;</span>
+        <div class="modal-header">
+          <h2 id="modal-store-name"></h2>
+        </div>
+        <div class="modal-body">
+          <p id="modal-store-description"></p>
+          <div id="store-options"></div>
+        </div>
+        <div class="store-actions" id="store-actions">
+          <!-- Action buttons will be populated dynamically -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- Elevator Dialog -->
+    <div id="elevator-dialog" class="elevator-dialog">
+      <div class="elevator-content">
+        <div class="elevator-header">
+          <h3>Elevator</h3>
+          <p>Select a floor to visit</p>
+        </div>
+        <div class="elevator-floors" id="elevator-floors">
+          <!-- Floor buttons will be populated dynamically -->
+        </div>
+        <button class="elevator-close" id="elevator-close">Cancel</button>
+      </div>
+    </div>
+    
+    <div id="message-box" class="message-box" style="display: none;"></div>
+    
+    <!-- Shopping Cart Dialog -->
+    <div id="cart-dialog" class="cart-dialog">
+      <div class="cart-content">
+        <div class="cart-header">
+          <h3>Shopping Cart</h3>
+          <span class="cart-close" id="cart-close">&times;</span>
+        </div>
+        <div class="cart-items" id="cart-items">
+          <!-- Cart items will be populated dynamically -->
+        </div>
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="mall-map.js"></script>
+  </body>
+</html>

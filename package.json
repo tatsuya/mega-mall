@@ -1,0 +1,13 @@
+{
+  "name": "mega-mall",
+  "version": "1.0.0",
+  "description": "Interactive Mall Simulator",
+  "scripts": {
+    "dev": "netlify dev",
+    "build": "netlify build",
+    "deploy": "netlify deploy --prod"
+  },
+  "devDependencies": {
+    "netlify-cli": "^17.0.0"
+  }
+}
