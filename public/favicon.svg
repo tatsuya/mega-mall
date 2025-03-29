@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="48" height="48">
+  <!-- Simple, modern favicon for MegaMall -->
+  <rect width="100" height="100" fill="#000000" rx="10" ry="10"/>
+  
+  <!-- Stylized 'M' letter -->
+  <path d="M25 25 L25 75 L40 60 L50 75 L60 60 L75 75 L75 25" stroke="#FFFFFF" stroke-width="8" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+</svg>
